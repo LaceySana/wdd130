@@ -56,6 +56,11 @@ p {
     padding: 0;
 }
 
+ul p {
+    font-size: larger;
+    font-weight: bold;
+}
+
 aside {
     position: relative;
     width: 20rem;
