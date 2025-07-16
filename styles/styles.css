@@ -1,7 +1,7 @@
 :root {
     --heading-text-color: rgb(200 0 0);
     --border: 1px solid rgba(0 0 0 / 0.2);
-    --background-color: rgb(100, 0, 0);
+    --background-color: rgb(100 0 0);
     --alink: rgba(0 0 0 / 1);
     --avisited: rgba(0 0 0 / 1);
 }
@@ -56,7 +56,7 @@ p {
     padding: 0;
 }
 
-ul p {
+div p {
     font-size: larger;
     font-weight: bold;
 }
@@ -97,6 +97,6 @@ footer{
 }
 
 .list {
-    padding: 2rem;
+    padding: 0 2rem;
     list-style-type: circle;
 }
