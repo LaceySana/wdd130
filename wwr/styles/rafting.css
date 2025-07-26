@@ -37,6 +37,7 @@ nav, p, section, article {
 }
 
 header {
+    display: grid;
     position: relative;
     background-color: var(--primary-color);
     color: var(--accent1-color);
@@ -51,7 +52,7 @@ header img {
 }
 
 header nav a {
-    display: inline-block;
+    flex: space-around;
     padding: 1rem;
     /* margin: 3rem 0 2rem; */
     border: 2px solid;
