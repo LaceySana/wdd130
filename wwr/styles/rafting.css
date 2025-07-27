@@ -7,6 +7,19 @@
     --body-font: "Courier Prime", monospace;
 }
 
+a:link {
+    color: var(--accent2-color);
+}
+
+a:visited {
+    color: var(--accent2-color);
+}
+
+a:hover {
+    color: blue;
+    font-size: larger;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +73,7 @@ header nav a {
     align-items: center;
     padding: 1rem;
     border: 2px solid;
+    border-radius: .5cap;
     background-color: var(--secondary-color);
 }
 
@@ -91,6 +105,11 @@ article {
     box-shadow: 5px 6px rgba(214 255 246 / .3);
 }
 
+section {
+    
+    background-color: var(--primary-color);
+}
+
 .adventure {
     display: flex;
     flex-flow: row wrap;
@@ -98,12 +117,12 @@ article {
     text-align: center;
 }
 
-.adventure h2 {
-    
+#adventure-header {
+    text-align: center;
 }
 
-.adventure figure {
-    max-width: 100px;
+.adventure figure img {
+    max-width: 200px;
 }
 
 footer {
@@ -125,14 +144,15 @@ footer nav {
 
 .history {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    /* grid-template-columns: 2fr 1fr 2fr; */
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
 }
 
-.history h2 {
+/* .history h2 {
     grid-column: span 4;
-}
+} */
 
 /* .history section p {
     grid-area: sidetext;
@@ -157,3 +177,9 @@ footer nav {
     height: auto;
 }
 
+
+
+#main-nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
