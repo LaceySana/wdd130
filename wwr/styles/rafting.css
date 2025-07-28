@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #508ca4; /*  #508ca4 */
-    --secondary-color: #d6fff6; /* d6fff6 */
+    --primary-color: #9BBFCF; /*  #508ca4 */
+    --secondary-color: #cfe0dd; /* d6fff6 */
     --accent1-color: #ffddcd; /* ffddcd*/
     --accent2-color: #0d2c54; /* 0d2c54 */
     --heading-font: "Pompiere", sans-serif;
@@ -210,6 +210,7 @@ footer nav {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     border: var(--thin-border);
+    border-top: 0;
 }
 
 /* ID Selectors */
