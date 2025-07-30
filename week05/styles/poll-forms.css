@@ -1,0 +1,118 @@
+:root {
+    --serif-font: "Cactus Classical Serif", serif;
+    --sans-serif-font: "Google Sans Code", monospace;
+    --dark-red: #910000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .cactus-classical-serif-regular {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.google-sans-code-regular {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+body {
+    font-family: var(--sans-serif-font);
+    font-size: 1.2em;
+    color: #000;
+    background: #fff;
+    margin: 1em;
+}
+
+header {
+    margin-bottom: 1em;
+    font-family: var(--serif-font);
+    text-align: center;
+}
+
+form {
+    max-width: 80%;
+    margin: auto;
+    padding: 1em;
+    border: thin solid;
+    border-radius: 10%;
+    background: hsl(0, 100%, 91%);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: 1em;
+    margin: 1em;
+    padding: 1em;
+}
+
+legend {
+    font-family: var(--serif-font);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--dark-red)
+}
+
+label, input, button, select, textarea {
+    border-radius: 5%;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5em;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    width: 150px;
+    margin: auto;
+    padding: 1em;
+    font-family: var(--serif-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    background: var(--dark-red);
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    font-size: small;
+    text-align: center;
+    border-top: thin solid var(--dark-red);
+}
+
+/* Class Selectors */
+
+.form-items {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 10px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+}
