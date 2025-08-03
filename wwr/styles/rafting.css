@@ -17,7 +17,7 @@ a:visited {
     color: var(--accent2-color);
 }
 
-a:hover {
+nav a:hover, button a:hover {
     background-color: var(--accent1-color);
     font-size: larger;
 }
@@ -53,6 +53,7 @@ nav, p, section, article {
 
 header {
     padding: 2rem;
+    border-bottom: var(--thin-border);
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 3fr;
@@ -79,7 +80,7 @@ header nav {
 header nav a {
     display: flex;
     max-height: min-content;
-    padding: 1rem;
+    padding: .5rem;
     border: 2px solid;
     border-radius: .5cap;
     background-color: var(--secondary-color);
@@ -99,22 +100,38 @@ h1 {
 }
 
 section {
+    padding: 1.5em;
     text-align: center;
     border: var(--thick-border);
     background-color: var(--primary-color);
 }
 
+legend {
+    margin-bottom: 1em;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+
+
 footer {
-    border-top: 1px solid;
-    display: grid;
-    grid-template-columns: auto 30%;
+    padding: 1em;
+    border-top: var(--thin-border);
+    display: flex;
+    gap: 1em;
 }
 
 footer p {
-    justify-self: center;
+    margin: auto;
 }
 
+
+
 footer nav {
+    margin: auto;
     display: flex;
 }
 
@@ -167,8 +184,9 @@ footer nav {
 }
 
 .socialmedia img {
-    width: 30px;
-    margin: 0 20px;
+    min-width: 10px;
+    max-width: 30px;
+    margin: 0 5px;
 }
 
 .adventure {
@@ -203,8 +221,125 @@ footer nav {
     border-top: 0;
 }
 
+.contact-info, .contact-request {
+    text-align: left;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "phone map"
+    "email map"
+    "address map";
+}
+
+@media (max-width: 620px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "phone" "email" "address" "map";
+    }
+}
+
+.contact-info h2 { 
+    grid-area: header;
+    margin-bottom: 1em;
+}
+
+.comp-phone { grid-area: phone; }
+.comp-email { grid-area: email; }
+.comp-address { grid-area: address;}
+
+.contact-info-element {
+    margin: 1em;
+    font-weight: bold;
+}
+
+.employees {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.employees h2 {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+}
+
+.employees figure {
+    /* border: var(--thin-border); */
+    border-radius: 30px 30px 0 0;
+}
+
+.employees figure img {
+    max-width: 130px;
+    vertical-align: bottom;
+    border: var(--thick-border);
+    border-radius: 30px;
+}
+
+.employees figcaption {
+    max-width: max-content;
+    min-height: max-content;
+    margin: auto;
+    line-height: .8em;
+    padding: .5em;
+    font-weight: bold;
+}
+
+.contact-request fieldset{
+    margin: 1em;
+    border: var(--thin-border);
+}
+
+.form-item {
+    margin: 1em;
+}
+
+.title {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 3px;
+}
+
+.button {
+    padding: 1em;
+    max-width: 100px;
+    /* font-family: var(--heading-font); */
+
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    border-radius: 30px;
+}
+.map {
+    width: 200px;
+    margin: 10px;
+    border: var(--thick-border);
+    grid-area: map;
+    align-self: self-end;
+    justify-self: flex-end;
+}
+
+
+
 /* ID Selectors */
 
 #adventure-header {
     text-align: center;
+}
+
+#contact-wireframe {
+    order: -1;
+    margin: auto;
+    padding: .5em;
+    border: var(--thin-border);
+    border-radius: 3%;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
 }
