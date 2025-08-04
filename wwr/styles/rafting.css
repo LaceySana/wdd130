@@ -330,7 +330,7 @@ input, textarea {
 
 .button {
     padding: 1em;
-    max-width: 100px;
+    max-width: max-content;
     /* font-family: var(--heading-font); */
 
     color: var(--accent2-color);
