@@ -99,12 +99,22 @@ h1 {
     color: white;
 }
 
+.header-banner img {
+    max-width: 100%;
+    display: block;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+
+}
+
 section {
     padding: 1.5em;
     text-align: center;
     border: var(--thick-border);
     background-color: var(--primary-color);
+    position: relative;
 }
+
 
 legend {
     margin-bottom: 1em;
@@ -137,6 +147,11 @@ footer nav {
 
 
 /* Class Selectors */
+
+.header-banner {
+    position: relative;
+    z-index: 1;
+}
 
 .hero {
     position: relative;
@@ -177,6 +192,12 @@ footer nav {
     padding: 10px;
     background-color: var(--secondary-color);
     border: var(--thin-border);
+}
+
+.overlapped {
+    z-index: 2;
+    margin-top: -230px;
+
 }
 
 .socialmedia a {
@@ -321,8 +342,8 @@ input, textarea {
     margin: 10px;
     border: var(--thick-border);
     grid-area: map;
-    align-self: self-end;
-    justify-self: flex-end;
+    align-self: end;
+    justify-self: end;
 }
 
 
