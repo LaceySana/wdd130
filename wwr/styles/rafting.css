@@ -88,23 +88,20 @@ header nav a {
     font-weight: bold;
 }
 
-h1 {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.85;
-    background-color: var(--accent2-color);
-    color: white;
-}
-
 section {
     padding: 1.5em;
     text-align: center;
     border: var(--thick-border);
     background-color: var(--primary-color);
     position: relative;
+}
+
+section section {
+    padding: 1.5em;
+    text-align: center;
+    border: var(--thick-border);
+    background-color: var(--accent1-color);
+    /* position: relative; */
 }
 
 
@@ -117,6 +114,10 @@ textarea {
     height: 100px;
 }
 
+li {
+    list-style-type: circle;
+    margin: 1em;
+}
 
 
 footer {
@@ -155,6 +156,17 @@ footer nav {
     height: auto;
 } */
 
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent2-color);
+    color: white;
+}
+    
 .hero-img {
     display: block;
     width: 100%;
@@ -322,6 +334,9 @@ footer nav {
 
 .title {
     font-weight: bold;
+    font-size: large;
+    letter-spacing: .5rem;
+    padding: 0;
 }
 
 input, textarea {
@@ -344,6 +359,23 @@ input, textarea {
     grid-area: map;
     align-self: end;
     justify-self: end;
+}
+
+.trip {
+    text-align: left;
+    margin: auto;
+}
+
+.trip p {
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contents {
+    padding: 1em;
 }
 
 
