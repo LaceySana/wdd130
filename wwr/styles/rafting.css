@@ -402,7 +402,8 @@ a.button {
     position: absolute;
     right: 0;
     bottom: 0;
-    mask-image: linear-gradient(to left, black, 15%, transparent 100%);
+    mask-image: linear-gradient(to left, black 15%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, black 15%, transparent 100%);
     opacity: 0;
     transition-duration: 0.5s;
     /* z-index: ; */
@@ -411,7 +412,8 @@ a.button {
 
 .trip:hover img {
     opacity: 100;
-    mask-image: linear-gradient(to left, black, 15%, transparent 100%);
+    mask-image: linear-gradient(to left, black 15%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, black 15%, transparent 100%);
     transition-duration: 1s;
 }
 
