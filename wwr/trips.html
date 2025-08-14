@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Whitewater Rafting</title>
-    <meta name="description" content="Contact Whitewater Rafting Company">
+    <title>Trips - Whitewater Rafting</title>
+    <meta name="description" content="Whitewater Rafting Trips">
     <meta name="author" content="Lacey Sanabria">
     <link rel="stylesheet" href="styles/rafting.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Pompiere&display=swap" rel="stylesheet">
@@ -24,93 +24,139 @@
     </header>
     <main>
         <div class="hero">
-            <img class="hero-img" src="images/hero-image.jpg" alt="rapids waterfall">
+            <img class="hero-img" src="images/hero-image.jpg" alt="Overhead shot of group rafting through black rocks">
             <h1>Rafting Trips</h1>
-            <article class="contents">
+        </div>
+        <div class="flex-container">
+            <aside class="sidebar overlapped">
                 <h2>Contents</h2>
                 <ul>
-                    <li>Scenic</li>
-                    <li>High Adventure</li>
-                    <li>Specialty</li>
+                    <li class="dropdown">
+                        <a href="#scenic-trips" id="dropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Scenic</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+                        <li><a href="#trip-1">River Breeze Float (Class: I)</a></li>
+                        <li><a href="#trip-2">Sunset Drift Adventure (Class: I)</a></li>
+                        <li><a href="#trip-3">Gentle Rapids Retreat (Class: II)</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#high-adventure-trips" id="dropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            High Adventure</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-2">
+                        <li><a href="#trip-4">Whitewater Rush (Class: III-IV)</a></li>
+                        <li><a href="#trip-5">Rapid Fury Ride (Class: III)</a></li>
+                        <li><a href="#trip-6">Thunder Creek Challenge (Class: V)</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#specialty-trips" id="dropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Specialty</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-3">
+                        <li><a href="#trip-7">Team Torrent Trek (Class: II-III)</a></li>
+                        <li><a href="#trip-8">Couple's Cascade (Class: I)</a></li>
+                        <li><a href="#trip-9">Youth Rapids Rally (Class: I-II)</a></li>
+                    </ul>
+                    </li>
                 </ul>
-            </article>
+            </aside>
+            <div class="main-content">
+                <section class="overlapped">
+                    <h2>Have a question about a trip or the website?</h2>
+                    <a class="button" href="contact.html">Contact Us Here!</a>
+                </section>
+                <section id="scenic-trips">
+                    <h2>Scenic</h2>
+                    <div class="trip" id="trip-1">
+                        <p class="title">River Breeze Float</p>
+                        <p>A calm, relaxing float through serene landscapes—perfect for first-timers.</p>
+                        <p><span class="bold">Difficulty:</span> Easy (Class: I)</p>
+                        <p><span class="bold">Duration:</span> 1.5 hrs</p>
+                        <p><span class="bold">Pricing:</span> $45 per person</p>
+                        <img class="trip-image" src="images/rafting-9.jpg" alt="calm river rafting">
+                    </div>
+                    <div class="trip" id="trip-2">
+                        <p class="title">Sunset Drift Adventure</p>
+                        <p>Glide along the river as the sun sets, with golden views and gentle currents.</p>
+                        <p><span class="bold">Difficulty:</span> Easy (Class: I)</p>
+                        <p><span class="bold">Duration:</span> 2 hrs</p>
+                        <p><span class="bold">Pricing:</span> $55 per person</p>
+                        <img class="trip-image" src="images/rafting-11.jpg" alt="rafting with sunset">
+                        
+                    </div>
+                    <div class="trip" id="trip-3">
+                        <p class="title">Gentle Rapids Retreat</p>
+                        <p>A mellow ride with light splashes and scenic stops for photos and wildlife.</p>
+                        <p><span class="bold">Difficulty:</span> Moderate (Class: II)</p>
+                        <p><span class="bold">Duration:</span> 2.5 hrs</p>
+                        <p><span class="bold">Pricing:</span> $60 per person</p>
+                        <img class="trip-image" src="images/rafting-5.1.jpg" alt="gentle rapids river">
+                    </div>
+                </section>
+                <section id="high-adventure-trips">
+                    <h2>High Adventure</h2>
+                    <div class="trip" id="trip-4">
+                        <p class="title">Whitewater Rush</p>
+                        <p>Fast-paced thrills with Class III-IV rapids—ideal for adrenaline junkies.</p>
+                        <p><span class="bold">Difficulty:</span> Challenging (Class: III-IV)</p>
+                        <p><span class="bold">Duration:</span> 3 hrs</p>
+                        <p><span class="bold">Pricing:</span> $85 per person</p>
+                        <img class="trip-image" src="images/rafting-1.jpg" alt="rafting down waterfall">
+                    </div>
+                    <div class="trip" id="trip-5">
+                        <p class="title">Rapid Fury Ride</p>
+                        <p>A wild ride through narrow canyons and roaring rapids. Hold on tight!</p>
+                        <p><span class="bold">Difficulty:</span> Challenging (Class: III)</p>
+                        <p><span class="bold">Duration:</span> 2.5 hrs</p>
+                        <p><span class="bold">Pricing:</span> $80 per person</p>
+                        <img class="trip-image" src="images/rafting-10.jpg" alt="waterfall rapids">
+                    </div>
+                    <div class="trip" id="trip-6">
+                        <p class="title">Thunder Creek Challenge</p>
+                        <p>Navigate technical rapids and sharp turns in this intense adventure.</p>
+                        <p><span class="bold">Difficulty:</span> Expert (Class: V)</p>
+                        <p><span class="bold">Duration:</span> 3.5 hrs</p>
+                        <p><span class="bold">Pricing:</span> $95 per person</p>
+                        <img class="trip-image" src="images/rafting-7.jpg" alt="large rapids creek">
+                    </div>
+                </section>
+                <section id="specialty-trips">
+                    <h2>Specialty</h2>
+                    <div class="trip" id="trip-7">
+                        <p class="title">Team Torrent Trek</p>
+                        <p>A team-building experience with coordinated paddling and group challenges.</p>
+                        <p><span class="bold">Difficulty:</span> Moderate (Class: II-III)</p>
+                        <p><span class="bold">Duration:</span> 3 hrs</p>
+                        <p><span class="bold">Pricing:</span> $70 per person</p>
+                        <img class="trip-image" src="images/rafting-4.jpg" alt="big group rafting">
+                    </div>
+                    <div class="trip" id="trip-8">
+                        <p class="title">Couple's Cascade Cruise</p>
+                        <p>A romantic float with quiet moments and scenic stops—ideal for two.</p>
+                        <p><span class="bold">Difficulty:</span> Easy (Class: I)</p>
+                        <p><span class="bold">Duration:</span> 2 hrs</p>
+                        <p><span class="bold">Pricing:</span> $100 per couple</p>
+                        <img class="trip-image" src="images/rafting-12.jpg" alt="couple rafting">
+                    </div>
+                    <div class="trip" id="trip-9">
+                        <p class="title">Youth Rapids Rally</p>
+                        <p>A fun, safe intro to rafting for kids and teens, with splash zones galore.</p>
+                        <p><span class="bold">Difficulty:</span> Easy-Moderate (Class: I-II)</p>
+                        <p><span class="bold">Duration:</span> 1.5 hrs</p>
+                        <p><span class="bold">Pricing:</span> $40 per person</p>
+                        <img class="trip-image" src="images/rafting-8.jpg" alt="youth group rafting">
+                    </div>
+                </section>
+                <section>
+                    <h2>Have a question about a trip or the website?</h2>
+                    <a class="button" href="contact.html">Contact Us Here!</a>
+                </section>
+            </div>
         </div>
-        <section class="overlapped">
-            <h2>Scenic</h2>
-            <section class="trip">
-                <p class="title">River Breeze Float</p>
-                <p>A calm, relaxing float through serene landscapes—perfect for first-timers.</p>
-                <p><span class="bold">Difficulty:</span> Easy</p>
-                <p><span class="bold">Duration:</span> 1.5 hrs</p>
-                <p><span class="bold">Pricing:</span> $45 per person</p>
-            </section>
-            <section class="trip">
-                <p class="title">Sunset Drift Adventure</p>
-                <p>Glide along the river as the sun sets, with golden views and gentle currents.</p>
-                <p><span class="bold">Difficulty:</span> Easy</p>
-                <p><span class="bold">Duration:</span> 2 hrs</p>
-                <p><span class="bold">Pricing:</span> $55 per person</p>
-            </section>
-            <section class="trip">
-                <p class="title">Gentle Rapids Retreat</p>
-                <p>A mellow ride with light splashes and scenic stops for photos and wildlife.</p>
-                <p><span class="bold">Difficulty:</span> Moderate</p>
-                <p><span class="bold">Duration:</span> 2.5 hrs</p>
-                <p><span class="bold">Pricing:</span> $60 per person</p>
-            </section>
-        </section>
-        <section>
-            <h2>High Adventure</h2>
-            <section class="trip">
-                <p class="title">Whitewater Rush</p>
-                <p>Fast-paced thrills with Class III-IV rapids—ideal for adrenaline junkies.</p>
-                <p><span class="bold">Difficulty:</span> Challenging</p>
-                <p><span class="bold">Duration:</span> 3 hrs</p>
-                <p><span class="bold">Pricing:</span> $85 per person</p>
-            </section>
-            <section class="trip">
-                <p class="title">Rapid Fury Ride</p>
-                <p>A wild ride through narrow canyons and roaring rapids. Hold on tight!</p>
-                <p><span class="bold">Difficulty:</span> Challenging</p>
-                <p><span class="bold">Duration:</span> 2.5 hrs</p>
-                <p><span class="bold">Pricing:</span> $80 per person</p>
-            </section>
-            <section class="trip">
-                <p class="title">Thunder Creek Challenge</p>
-                <p>Navigate technical rapids and sharp turns in this intense adventure.</p>
-                <p><span class="bold">Difficulty:</span> Expert</p>
-                <p><span class="bold">Duration:</span> 3.5 hrs</p>
-                <p><span class="bold">Pricing:</span> $95 per person</p>
-            </section>
-        </section>
-        <section>
-            <h2>Specialty</h2>
-            <section class="trip">
-                <p class="title">Team Torrent Trek</p>
-                <p>A team-building experience with coordinated paddling and group challenges.</p>
-                <p><span class="bold">Difficulty:</span> Moderate</p>
-                <p><span class="bold">Duration:</span> 3 hrs</p>
-                <p><span class="bold">Pricing:</span> $70 per person</p>
-            </section>
-            <section class="trip">
-                <p class="title">Couple's Cascade Cruise</p>
-                <p>A team-building experience with coordinated paddling and group challenges.</p>
-                <p><span class="bold">Difficulty:</span> Easy</p>
-                <p><span class="bold">Duration:</span> 2 hrs</p>
-                <p><span class="bold">Pricing:</span> $100 per couple</p>
-            </section>
-            <section class="trip">
-                <p class="title">Youth Rapids Rally</p>
-                <p>A fun, safe intro to rafting for kids and teens, with splash zones galore.</p>
-                <p><span class="bold">Difficulty:</span> Easy-Moderate</p>
-                <p><span class="bold">Duration:</span> 1.5 hrs</p>
-                <p><span class="bold">Pricing:</span> $40 per person</p>
-            </section>
-        </section>
     </main>
     <footer>
         <p>© 2025 | Whitewater Rafting | Lacey Sanabria</p>
-        <a id="contact-wireframe" href="https://drive.google.com/file/d/1jGYm1I_-5SNzPoah0W9jOuubyYfbT5jm/view?usp=sharing" target="_blank">Wireframe</a>
+        <a class="wireframe" href="images/Trips-Wireframe.PNG" target="_blank">Wireframe</a>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.webp" alt="Follow us on Facebook!"></a>
             <a href="https://twitter.com" target="_blank"><img src="images/x-twitter-icon.webp" alt="Follow us on Twitter!"></a>
